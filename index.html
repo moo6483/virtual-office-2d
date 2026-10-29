@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>나만의 가상 사무실</title>
+<style>
+:root{--bg:#10151f;--card:#1a2230;--fg:#e8ecf3;--dim:#9aa6bb;--accent:#7be0c8}
+@media (prefers-color-scheme:light){:root{--bg:#f4f6fa;--card:#fff;--fg:#17202e;--dim:#566175;--accent:#0b8f73}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,"Apple SD Gothic Neo",sans-serif}
+main{max-width:860px;margin:0 auto;padding:40px 16px 64px}h1{font-size:2rem;margin:0 0 .3em}h2{margin-top:2em;font-size:1.2rem;color:var(--accent)}
+p,li{color:var(--dim)}strong{color:var(--fg)}.card{background:var(--card);border-radius:14px;padding:16px 20px;margin:16px 0}
+img{width:100%;border-radius:10px;image-rendering:pixelated;display:block}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+a{color:var(--accent)}code{background:rgba(127,127,127,.18);padding:1px 6px;border-radius:5px}
+</style></head><body><main>
+<h1>나만의 가상 사무실</h1>
+<p>2D 픽셀아트 사무실에서 캐릭터가 걸어 다니고, <strong>AI 직원이 이 컴퓨터 안에서</strong> 한국어로 대답합니다. 외부 AI 서비스 키가 필요 없습니다.</p>
+<div class="card"><img src="2D_사무실_이동후.jpg" alt="2D 픽셀아트 사무실에서 정장 입은 캐릭터가 서 있는 장면"></div>
+<div class="grid">
+<div class="card"><img src="2D_캐릭터만들기.jpg" alt="캐릭터 만들기 화면"><p>직업 프리셋으로 캐릭터를 만듭니다.</p></div>
+<div class="card"><img src="2D_맵템플릿_SmallOffice.jpg" alt="맵 템플릿 선택 화면"><p>기본 사무실 맵(Small Office)을 고릅니다.</p></div>
+</div>
+<h2>이 페이지에 대해</h2>
+<p>이 페이지는 <strong>소개용 정적 페이지</strong>입니다. 사무실 자체는 서버와 로컬 AI 모델이 필요해서 한 대의 컴퓨터에서 실행되며, GitHub에서 직접 열 수 없습니다.</p>
+<h2>구성</h2>
+<ul><li><a href="https://github.com/dandacompany/deskrpg">DeskRPG</a> 2D 픽셀아트 버전 (2026.9.9)</li>
+<li><a href="https://github.com/NousResearch/hermes-agent">Hermes Agent</a> — AI 직원의 두뇌</li>
+<li>Ollama + <code>gemma4:e4b</code> — 이 컴퓨터에서 도는 AI 모델</li></ul>
+<h2>알려진 한계</h2>
+<ul><li>작은 모델이라 긴 문서 작성 같은 복잡한 일은 품질이 불확실합니다.</li><li>메모리를 약 10GB 사용합니다.</li></ul>
+<p>설치 과정과 스크립트는 저장소의 <code>README.md</code>와 <code>설치기록.md</code>를 참고하세요.</p>
+</main></body></html>

@@ -1,0 +1,12 @@
+# 비밀·개인 데이터·대용량 파일은 올리지 않는다
+.env
+.env.*
+*.db
+data/
+node_modules/
+도구/
+hermes-홈/
+deskrpg/
+deskrpg-2d/
+*.log
+백업/
